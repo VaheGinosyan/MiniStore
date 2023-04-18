@@ -1,0 +1,20 @@
+@use '../themes/' as *;
+@use '../abstract/functions' as *;
+
+.tag {
+    @include colors(background-color, 'light-bg');
+    @include colors(color, 'fg');
+
+    &--bg {
+        font-size: crem(18px);
+    }
+
+    &--sm {
+        font-size: crem(15px);
+    }
+
+    &--active {
+        @include colors(background-color, 'fg');
+        @include colors(color, 'light-bg');
+    }
+}

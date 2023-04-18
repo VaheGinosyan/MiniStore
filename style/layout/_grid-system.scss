@@ -1,0 +1,14 @@
+// %row {
+//     display: grid;
+//     grid-template-columns: repeat(12, 1fr);
+// }
+
+// %col-2 {
+//     grid-column: span 2;
+// }
+
+// %col-xs-2 {
+//     @include media(xs) {
+//         grid-column: span 2;
+//     } 
+// }

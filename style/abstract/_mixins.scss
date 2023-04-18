@@ -1,0 +1,27 @@
+@use '../themes' as *;
+@use 'functions' as *;
+
+@mixin flex($jc: null, $ai: null, $gr: 0, $gc: 0) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $jc;
+    align-items: $ai;
+    gap: $gr $gc;
+}
+
+@mixin typography($ff, $fs, $fw, $lh, $ls: null) {
+    font-family: unquote($ff);
+    font-size: crem($fs);
+    font-weight: $fw;
+    line-height: $lh;
+    letter-spacing: $ls;
+}
+
+@mixin grid-autofill($min-width, $variant: auto-fill) {
+    display: grid;
+    grid-template-columns: repeat($variant, minmax($min-width, 1fr));
+}
+
+@mixin color($property, $color) {
+    #{$property}: var(--#{$color}, map-get($colors, $color));
+}
