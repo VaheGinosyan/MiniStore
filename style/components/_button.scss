@@ -1,32 +1,3 @@
 @use '../themes/' as *;
 @use '../abstract/' as *;
 
-.btn {
-    @include colors(background-color, 'fg');
-    @include colors(color, 'light-bg');
-
-    &:hover {
-        @include colors(background-color, 'hover');
-        @include colors(color, 'fg');
-    }
-
-    &:disabled {
-        opacity: 0.3;
-        cursor: not-allowed;
-    }
-
-    &--inverse {
-        @include colors(background-color, 'bg');
-        @include colors(color, 'fg');
-    }
-
-    &--sm {
-        padding: crem(8px) crem(16px);
-    }
-
-    &--bg {
-        padding: crem(12px) crem(24px);
-    }
-
-    
-}
