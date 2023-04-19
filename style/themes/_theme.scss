@@ -1,15 +1,15 @@
 $colors: (
-    'fg': #000,
-    'bg': #f1f1f1,
-    'light-bg': #fff,
-    'hover': #ccc,
-    'btn-color': #f00,
-    'fg-link' : #4CAF50,
+    'fg': #272727,
+    'fg-secondary': #72AEC8,
+    'fg-light': #848484,
+    'fg-sm' : #3A3A3A,
+    'bg': #fff,
+    'bg-dark': #EDF1F3,
+    'inactive': #D3D3D3,
+    'underline': #E1E1E1,
+    'quotes': #EBEFF1,
+    'icon': #D7DDDF,
 );
-
-@mixin colors($property, $color) {
-    #{$property}: var(--#{$color}, map-get($colors, $color));
-}
 
 :root {
     @each $color, $color-value in $colors {
