@@ -222,7 +222,7 @@ picture {
   gap: 44px 44px;
   text-transform: uppercase;
 }
-.main-header__sections-item:first-of-type {
+.main-header__sections-item:hover, .main-header__icon:hover {
   color: var(--fg-secondary, #72AEC8);
 }
 .main-header__nav {
