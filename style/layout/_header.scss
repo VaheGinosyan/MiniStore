@@ -1,3 +1,39 @@
 @use '../abstract/' as *;
 @use '../base/' as *;
 
+.main-header {
+    padding: crem(12px) crem(310px);
+    @include flex($jc: space-between, $ai: center);
+    @include color(color, fg);
+
+    &__title {
+        @extend %h2;
+        @include flex;
+    }
+
+    &__dot {
+        @include color(color, fg-secondary);
+    }
+
+    &__nav {
+        @extend %text-4;
+    }
+
+    &__sections {
+        @include flex($gr: 44px, $gc: 44px);
+        text-transform: uppercase;
+    }
+
+    &__sections-item:first-of-type {
+        @include color(color, fg-secondary);
+    }
+
+    &__nav {
+        @include flex($gc: 120px);
+    }
+
+    &__icons {
+        width: crem(110px);
+        @include flex($jc: space-between);
+    }
+}

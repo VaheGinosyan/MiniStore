@@ -184,4 +184,58 @@ picture {
   --icon: #D7DDDF;
 }
 
+.main-header__title {
+  font-family: 'Jost', sans-serif;
+  font-size: 2.0625rem;
+  font-weight: 400;
+  line-height: 1.45;
+}
+
+.main-header__nav {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.48;
+  letter-spacing: 0.1em;
+}
+
+.main-header {
+  padding: 0.75rem 19.375rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 0;
+  color: var(--fg, #272727);
+}
+.main-header__title {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 0;
+}
+.main-header__dot {
+  color: var(--fg-secondary, #72AEC8);
+}
+.main-header__sections {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 44px 44px;
+  text-transform: uppercase;
+}
+.main-header__sections-item:first-of-type {
+  color: var(--fg-secondary, #72AEC8);
+}
+.main-header__nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 120px;
+}
+.main-header__icons {
+  width: 6.875rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0 0;
+}
+
 /*# sourceMappingURL=style.css.map */
