@@ -191,7 +191,7 @@ picture {
   line-height: 1.45;
 }
 
-.main-header__nav {
+.btn, .main-header__nav {
   font-family: 'Lato', sans-serif;
   font-size: 0.875rem;
   font-weight: 500;
@@ -236,6 +236,17 @@ picture {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 0 0;
+}
+
+.btn {
+  color: var(--bg, #fff);
+  padding: 1rem 3.125rem;
+}
+.btn--main {
+  background-color: var(--fg, #272727);
+}
+.btn--secondary {
+  background-color: var(--fg-secondary, #72AEC8);
 }
 
 /*# sourceMappingURL=style.css.map */
