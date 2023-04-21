@@ -24,7 +24,8 @@
         text-transform: uppercase;
     }
 
-    &__sections-item:first-of-type {
+    &__sections-item:hover,
+    &__icon:hover  {
         @include color(color, fg-secondary);
     }
 
