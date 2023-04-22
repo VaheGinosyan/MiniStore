@@ -1,3 +1,18 @@
-@use '../themes/' as *;
-@use '../abstract/' as *;
+@use '../abstract' as *;
+@use '../base' as *;
+@use '../themes' as *;
 
+.btn {
+    @extend %text-4;
+    @include color(color, bg);
+    padding: crem(16px) crem(50px);
+    text-transform: uppercase;
+
+    &--main {
+        @include color(background-color, fg);
+    }
+
+    &--secondary {
+        @include color(background-color, fg-secondary);
+    }
+}
