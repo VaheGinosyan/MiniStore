@@ -184,19 +184,117 @@ picture {
   --icon: #D7DDDF;
 }
 
-.main-header__title {
+.main-header__title, .subscribe__title {
   font-family: 'Jost', sans-serif;
   font-size: 2.0625rem;
   font-weight: 400;
   line-height: 1.45;
 }
 
-.btn, .main-header__nav {
+.shop-insta__title {
+  font-family: 'Jost', sans-serif;
+  font-size: 1.875rem;
+  font-weight: 400;
+  line-height: 1.14;
+  letter-spacing: 0.06em;
+}
+
+.subscribe__description, .subscribe__input {
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.38;
+  letter-spacing: 0.03em;
+}
+
+.main-header__nav, .btn {
   font-family: 'Lato', sans-serif;
   font-size: 0.875rem;
   font-weight: 500;
   line-height: 1.48;
   letter-spacing: 0.1em;
+}
+
+.btn {
+  color: var(--bg, #fff);
+  padding: 1rem 3.125rem;
+  text-transform: uppercase;
+}
+.btn--main {
+  background-color: var(--fg, #272727);
+}
+.btn--secondary {
+  background-color: var(--fg-secondary, #72AEC8);
+}
+
+.wrapper {
+  max-width: 81.25rem;
+  margin: 0 auto;
+}
+
+.subscribe {
+  padding: 5rem 6.875rem;
+  background-color: var(--fg, #272727);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0 0;
+  margin-bottom: 7.5rem;
+}
+.subscribe__container {
+  color: var(--bg, #fff);
+}
+.subscribe__title {
+  text-transform: uppercase;
+}
+.subscribe__form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 0;
+}
+.subscribe__input {
+  padding: 0.625rem 7.5rem 0.625rem 1.875rem;
+}
+
+.shop-insta__title {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1.875rem;
+}
+.shop-insta__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(244px, 1fr));
+  gap: 1.25rem 1.25rem;
+}
+.shop-insta__item {
+  position: relative;
+}
+.shop-insta__img {
+  display: block;
+  width: 100%;
+}
+.shop-insta__hover {
+  transition: all 0.5s;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: var(--fg, #272727);
+  font-size: 30px;
+  z-index: 1;
+  visibility: hidden;
+}
+.shop-insta__icon {
+  color: var(--bg, #fff);
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+.shop-insta__item:hover .shop-insta__hover {
+  visibility: visible;
+  opacity: 0.5;
 }
 
 .main-header {
@@ -236,17 +334,6 @@ picture {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 0 0;
-}
-
-.btn {
-  color: var(--bg, #fff);
-  padding: 1rem 3.125rem;
-}
-.btn--main {
-  background-color: var(--fg, #272727);
-}
-.btn--secondary {
-  background-color: var(--fg-secondary, #72AEC8);
 }
 
 /*# sourceMappingURL=style.css.map */
