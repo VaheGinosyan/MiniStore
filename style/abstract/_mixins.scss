@@ -17,9 +17,10 @@
     letter-spacing: $ls;
 }
 
-@mixin grid-autofill($min-width, $variant: auto-fill) {
+@mixin grid-autofill($min-width, $gc: 0px, $gr: 0px, $variant: auto-fill) {
     display: grid;
     grid-template-columns: repeat($variant, minmax($min-width, 1fr));
+    gap: crem($gc) crem($gr);
 }
 
 @mixin color($property, $color) {
